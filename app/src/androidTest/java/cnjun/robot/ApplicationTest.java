@@ -16,7 +16,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
     public void testSend() {
         String res = HttpUtils.doGet("ni hao");
-        Log.e("TAG", res);
+        Log.i("TAG", "++++++++++++++++++++++++++" + res);
         res = HttpUtils.doGet("你是谁");
         Log.e("TAG", res);
         res = HttpUtils.doGet("给我讲个鬼故事");

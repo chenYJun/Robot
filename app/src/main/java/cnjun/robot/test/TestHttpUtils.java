@@ -1,6 +1,7 @@
 package cnjun.robot.test;
 
 import android.test.AndroidTestCase;
+import android.test.InstrumentationTestRunner;
 import android.util.Log;
 
 import cnjun.robot.utils.HttpUtils;
@@ -8,7 +9,7 @@ import cnjun.robot.utils.HttpUtils;
 /**
  * Created by chen on 15-5-25.
  */
-public class TestHttpUtils extends AndroidTestCase{
+public class TestHttpUtils extends InstrumentationTestRunner{
     public void testSend() {
         String res = HttpUtils.doGet("ni hao");
         Log.e("TAG", res);
