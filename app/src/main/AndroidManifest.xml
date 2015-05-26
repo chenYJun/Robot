@@ -3,6 +3,7 @@
     package="cnjun.robot" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +21,7 @@
         </activity>
     </application>
 
-
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:label="this is a test " android:targetPackage="package cnjun.robot;">
+    </instrumentation>
 
 </manifest>
